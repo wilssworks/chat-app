@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="chat-cont">
+      <header class="chat-header">
+        <h1 id="room-name"></h1>
+        <div id="view-users-group" class="view-users-group">
+          <a class="view-users-btn"><i class="fas fa-user"></i><i class="fas fa-angle-down"></i></a>
+          <ul id="users-list" class="users-list"></ul>
+        </div>
+        <button id="leave-btn" class="btn leave-btn"><i class="fas fa-times"></i></button>
+      </header>
+      <main class="chat-main">
+        <div class="chat-msgs"></div>
+        <form id="chat-form" class="chat-form">
+          <input id="msg" type="text" placeholder="message" required autocomplete="off" />
+          <button class="btn">send</button>
+        </form>
+      </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js" integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4=" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+@font-face {
+	font-family: 'Lato-Regular';
+	src: url(./fonts/Lato-Regular.ttf);
+	font-display: swap;
+}
+body {
+    font-family: 'Lato-Regular';
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    color: #555;
+}
+
+h1 {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: .5px;
+}
+h2 {margin: 0;}
+h3 {margin: 0;}
+
+p {
+    margin: 0;
+}
+.btn {
+    background-color: #eee;
+    text-transform: uppercase;
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+.chat-header {
+    display: flex;
+    align-items: center;
+    background: #eee;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+.btn.leave-btn {
+    margin: 0 0 0 auto;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+}
+.btn.leave-btn:hover {
+    color: red;
+}
+.view-users-btn {
+    font-size: 12px;
+    padding: 8px;
+    margin: 0 12px;
+}
+.view-users-btn:hover {
+    color:#000;
+}
+.view-users-btn i {
+    margin: 0 1px;
+}
+.view-users-group .users-list {
+    display: none;
+    font-size: 13px;
+    position: absolute;
+    background: #eee;
+    margin: 8px 0 0 0;
+    padding: 10px 10px 10px 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 3px -4px rgb(0 0 0 / 50%);
+    width: 140px;
+}
+.view-users-group.show .users-list {
+    display: block;
+}
+.chat-cont {
+    width: 500px;
+    max-width: 100%;
+}
+.chat-main {
+    height: 600px;
+    max-height: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+.chat-msgs {
+    padding: 20px;
+    max-height: 100%;
+    overflow: scroll;
+}
+.chat-msgs .message {
+    margin: 10px 0;
+}
+.chat-msgs .text {
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.chat-msgs .meta {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 2px 5px;
+}
+.chat-msgs .meta span {
+    margin: 0 0 0 10px;
+}
+.chat-form {
+    display: flex;
+    margin: auto 0 0 0;
+    background: #eee;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.chat-form input {
+    flex: 1;
+}
